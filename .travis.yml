@@ -2,3 +2,6 @@ language: node_js
 node_js:
   - '0.11'
   - '0.10'
+  - 'iojs'
+before_install:
+  - [ "${TRAVIS_NODE_VERSION}" = "0.8" ] && npm install flow-bin -g
